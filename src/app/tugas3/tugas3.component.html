@@ -1,0 +1,11 @@
+<button 
+  class="btn btn-primary" 
+  (click)="onCreationStatus()">Tampilkan Detail</button>
+
+  <p *ngIf="serverCreated">POLITEKNIK NEGRI MALANG</p>
+
+  <p *ngFor="let count of array; let i = index"
+    [ngStyle]="{backgroundColor: i >= 4 ? 'blue' : ''}"
+    [ngClass]="{huruf: i >= 4}">
+    {{ count }}
+  </p>
